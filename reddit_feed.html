@@ -1,0 +1,43 @@
+<!--
+Author: Chris Obigho
+Build Date: 03/30/2018
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Reddit API Domain Search</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="container-fluid">
+
+    <h1>Reddit API Domain Search</h1>
+    <div class="col-12-xs">
+        <p>Enter a domain without <code>http://www.</code> to browse recent entries on Reddit.Com or leave blank to get the Top 50 entries.</p>
+    </div>
+    <div class="col-12-xs mb-3">
+        <form id="domainform" name="domainform" class="form-row">
+            <div class="btn-toolbar" role="toolbar">
+                <div class="input-group">
+                    <input type="text" class="search form-control" id="s" name="s" placeholder="ex: youtube.com">
+                    <div class="input-group-prepend">
+                        <input type="submit" class="btn btn-info btn-md" value="GET" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="clearfix"></div>
+    <div class="row" id="content"></div>
+
+</div>
+
+<script src="scripts.js"></script>
+
+
+</body>
+</html>
